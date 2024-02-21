@@ -1,23 +1,11 @@
-"use client";
-import React, { useState } from 'react';
+import Counter from "@/components/Counter/Counter";
 
 const HomePage = () => {
-  const [counter, setCounter] = useState(0);
   // console.log("Hello World!");
   return (
     <div>
       <h1>Hello NextJs</h1>
-      <h2>Counter: {counter}</h2>
-      <button
-        className="btn btn-primary"
-        onClick={() => setCounter(counter + 1)}
-      >
-        Increase</button>
-      <button
-        className="btn btn-primary"
-        onClick={() => setCounter(counter - 1)}
-      >
-        Decrease</button>
+      <Counter></Counter>
     </div>
   );
 };
